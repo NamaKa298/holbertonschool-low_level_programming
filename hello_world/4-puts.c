@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * Fonction main - Affiche du texte
- */
+* main - Entry point
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
