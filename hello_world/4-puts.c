@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * Fonction puts - Affiche du texte
+ * Fonction main - Affiche du texte
  */
 int main(void)
 {
