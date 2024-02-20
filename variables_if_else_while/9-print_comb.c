@@ -8,12 +8,15 @@ int main(void)
 {
 	int sd;
 
-	for (sd = 48 ; sd <= 56 ; sd++)
+	for (sd = 48 ; sd <= 57 ; sd++)
 	{
 		putchar(sd);
-		putchar(',');
-		putchar(' ');
+		if (sd < 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	putchar(57);
+	putchar('\n');
 	return (0);
 }
