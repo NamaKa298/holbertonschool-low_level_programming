@@ -11,8 +11,8 @@ int main(void)
 	for (sd = 48 ; sd <= 56 ; sd++)
 	{
 		putchar(sd);
-		putchar(44);
-		putchar(32);
+		putchar(',');
+		putchar(' ');
 	}
 	putchar(57);
 	return (0);
