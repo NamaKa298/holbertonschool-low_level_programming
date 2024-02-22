@@ -2,9 +2,11 @@
 #include<stdio.h>
 #include <ctype.h>
 /**
- * _islower - Retourne 1 s'il s'agit d'une minuscule sinon 0
+ * _islower - check the code.
  *
- * Returns: 1 if c is lowercase, 0 otherwise
+ * @c: characher to be verified
+ *
+ * Return: Always 0.
  */
 int _islower(int c)
 {
