@@ -15,10 +15,10 @@ int main(void)
 			if (i % 3 == 0 || i % 5 == 0)
 			{
 				valeur_a_garder = i;
+				somme += valeur_a_garder;
 			}
-			somme += valeur_a_garder;
-
 		}
-		return (somme);
+		printf("%d", somme);
+		printf("\n");
 }
 
