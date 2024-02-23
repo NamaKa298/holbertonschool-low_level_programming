@@ -2,7 +2,7 @@
 /**
  * main - check the code
  *
- * Return: Always somme (success).
+ * Return: Always 1 (Success)
  */
 
 
