@@ -2,9 +2,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 /**
- * main - check the code.
+ * print_times_table - check the code.
  *
- * Return: Always 0.
+ * @n: character to check.
+ * Return: Nothing.
  */
 void print_times_table(int n)
 {
@@ -63,4 +64,4 @@ void print_times_table(int n)
 	{
 		_putchar('\n');
 	}
-}	
+}
