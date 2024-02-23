@@ -1,29 +1,18 @@
 #include"main.h"
+#include<stdio.h>
 /**
  * print_to_98 - check the code
  *
+ * @n: value to chek
  * Return: Nothing.
  */
 void print_to_98(int n)
 {
-
 	if (n > 98)
 	{
 		while (n > 98)
 		{
-			if (n > 100)
-			{
-				_putchar('0' + n / 100);
-				_putchar('0' + (n % 100) / 10);
-				_putchar('0' + (n % 100) % 10);
-			}
-			else
-			{
-				_putchar('0' + n / 10);
-				_putchar('0' + n % 10);
-			}
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", n);
 			n -= 1;
 		}
 	}
@@ -31,33 +20,10 @@ void print_to_98(int n)
 	{
 		while (n < 98)
 		{
-			if (n >= 10)
-			{
-				_putchar('0' + n / 10);
-				_putchar('0' + n % 10);
-			}
-			else if (n < 10 && n >= 0)
-			{
-				_putchar('0' + n);
-			}
-			else if (n > -10 && n <= 0)
-			{
-				_putchar('-');
-				_putchar('0' - n);
-			}
-			else if (n <= -10)
-			{
-				_putchar ('-');
-				_putchar('0' - n / 10);
-				_putchar('0' - n % 10);
-			}
-		_putchar(',');
-		_putchar(' ');
+			printf("%d, ", n);
 		n += 1;
 		}
 	}
-	_putchar('9');
-	_putchar('8');
-	_putchar('\n');
+	printf("98\n");
 }
 
