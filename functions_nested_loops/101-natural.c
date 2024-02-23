@@ -2,7 +2,7 @@
 /**
  * main - check the code
  *
- * Return: Always 1 (Success)
+ * Return: Always 0 (Success)
  */
 
 
@@ -22,6 +22,6 @@ int main(void)
 			}
 		}
 	printf("%d\n", somme);
-	return (1);
+	return (0);
 }
 
