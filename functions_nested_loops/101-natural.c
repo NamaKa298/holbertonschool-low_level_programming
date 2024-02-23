@@ -18,7 +18,7 @@ int main(void)
 				somme += valeur_a_garder;
 			}
 		}
-		printf("%d", somme);
-		return ('\n');
+	printf("%d", somme);
+	return ('\n');
 }
 
