@@ -21,7 +21,7 @@ int main(void)
 				somme += valeur_a_garder;
 			}
 		}
-	printf("%d", somme);
+	printf("%d\n", somme);
 	return ('\n');
 }
 
