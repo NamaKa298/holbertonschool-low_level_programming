@@ -2,7 +2,7 @@
 /**
  * main - check the code.
  *
- * Return: Always 1.
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -12,13 +12,13 @@ int main(void)
 	terme1 = 1;
 	terme2 = 2;
 
-	for (pas = 1 ; pas < 51 ; pas++)
+	for (pas = 0 ; pas < 50 ; pas++)
 	{
-		if (pas == 1)
+		if (pas == 0)
 		{
 			printf("%ld", terme1);
 		}
-		else if (pas == 2)
+		else if (pas == 1)
 		{
 			printf(", %ld", terme2);
 		}
@@ -31,5 +31,5 @@ int main(void)
 		}
 	}
 	printf("\n");
-	return ('1');
+	return ('0');
 }
