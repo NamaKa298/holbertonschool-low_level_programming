@@ -2,7 +2,7 @@
 /**
  * main - check the code.
  *
- * Return: Always 0.
+ * Return: Always 1.
  */
 int main(void)
 {
@@ -31,5 +31,5 @@ int main(void)
 		}
 	}
 	printf("\n");
-	return ('0');
+	return ('1');
 }
