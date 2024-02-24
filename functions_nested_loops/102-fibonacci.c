@@ -12,7 +12,7 @@ int main(void)
 	terme1 = 1;
 	terme2 = 2;
 
-	for (pas = 0 ; pas < 50 ; pas++)
+	for (pas = 0 ; pas <= 49 ; pas++)
 	{
 		if (pas == 0)
 		{
