@@ -6,17 +6,18 @@
  */
 int main(void)
 {
-	int terme1, terme2, terme3;
+	long int terme1, terme2, terme3;
+	int pas;
 
 	terme1 = 1;
 	terme2 = 2;
 
-	printf("%d", terme1);
-	printf("%d", terme2);
-	while (terme1 + terme2 < 50)
+	printf("%ld", terme1);
+	printf(", %ld", terme2);
+	for (pas = 0 ; pas < 48 ; pas++)
 	{
 		terme3 = terme1 + terme2;
-		printf(", %d", terme3);
+		printf(", %ld", terme3);
 		terme1 = terme2;
 		terme2 = terme3;
 	}
