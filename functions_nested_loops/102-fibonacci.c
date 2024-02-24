@@ -20,7 +20,7 @@ int main(void)
 		}
 		else if (pas == 2)
 		{
-			printf("%ld", terme2);
+			printf(", %ld", terme2);
 		}
 		else
 		{
