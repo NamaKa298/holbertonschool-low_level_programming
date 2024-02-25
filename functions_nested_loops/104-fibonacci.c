@@ -14,7 +14,7 @@ int main(void)
 
 	printf("%lu, %lu", terme1, terme2);
 
-	for (pas = 0 ; pas <= 95 ; pas++)
+	for (pas = 0 ; pas <= 97 ; pas++)
 	{
 		terme3 = terme1 + terme2;
 		printf(", %lu", terme3);
