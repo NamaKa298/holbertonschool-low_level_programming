@@ -8,7 +8,7 @@
  */
 void rev_string(char *s)
 {
-	int longueur, i;
+	int longueur, i, temporaire;
 
 	longueur = 0;
 
@@ -16,11 +16,11 @@ void rev_string(char *s)
 	{
 		longueur += 1;
 	}
-	i = longueur;
-
-	for (i = longueur - 1 ; i >= 0 ; i--)
+	for (i = 0 ; i < longueur / 2 ; i++)
 	{
-		_putchar(s[i]);
+		temporaire = s[i];
+			s[i] = s[longueur - i - 1];
+		s[longueur - i - 1] = temporaire;
+
 	}
-	_putchar('\n');
 }
