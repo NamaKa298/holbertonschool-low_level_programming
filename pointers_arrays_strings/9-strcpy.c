@@ -18,13 +18,16 @@ char *_strcpy(char *dest, char *src)
 	{
 		length_of_the_string++;
 	}
-	for (i = 0 ; i < length_of_the_string && src[i] != '\0' ; i++)
+	for (i = 0 ; i <= length_of_the_string ; i++)
 	{
-		dest[i] = src[i];
-	}
-	for ( ; i < length_of_the_string ; i++)
-	{
-		dest[i] = '\0';
+		if( src[i] != '\0')
+		{
+			dest[i] = src[i];
+		}
+		else
+		{
+			dest[i] = '\0';
+		}
 	}
 	return (dest);
 
