@@ -1,47 +1,43 @@
 #include "main.h"
-/**
- * _atoi - Entry point
- *
- * @s: character to be verified
- *
- * Return: result
- */
-#include <stdio.h>
+#include <limits.h>
 
+/**
+ 
+_atoi - Entry point.
+@s: character to be verified.
+*
+Return: convert integer.
+*/
 int _atoi(char *s)
 {
         int i = 0;
-        int sign = 0;
-        int res = 0;
+        int sign = 1;
+        int result = 0;
+        int digit;
+        int max_div_10 = INT_MAX / 10;
+        int max_mod_10 = INT_MAX % 10;
 
         while (s[i])
         {
-                if (s[i] == ' ' && s[i - 1] >= '0' && s[i - 1] <= '9')
+                if (s[i] == '-')
+                        sign *= -1;
+                if (s[i] >= '0' && s[i] <= '9')
                 {
-                        return (res);
+                        digit = s[i] - '0';
+
+                        if (result > max_div_10 || (result == max_div_10 && digit > max_mod_10))
+                        {
+                                return (sign == 1 ? INT_MAX : INT_MIN);
+                        }
+
+                        result = result * 10 + digit;
                 }
-                else if ((s[i] < '0' || s[i] > '9') && (s[i] != '-'))
+                else if (result > 0)
                 {
-                        i++;
-                        continue;
+                        break;
                 }
-                else if (s[i] == '-')
-                {
-                        sign++;
-                        i++;
-                }
-                else if (s[i] >= '0' && s[i] <= '9')
-                {
-                        res = res * 10 + s[i] - '0';
-                        i++;
-                }
+                i++;
         }
-        if (sign % 2 != 0)
-        {
-                return (-res);
-        }
-        else
-        {
-                return (res);
-        }
+
+        return (result * sign);
 }
