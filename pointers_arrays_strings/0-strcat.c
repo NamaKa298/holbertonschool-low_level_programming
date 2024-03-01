@@ -1,7 +1,9 @@
 #include"main.h"
 /**
- * _strcat - check the code                                                                                    *
- *                                                                                                            * Return: Always char.                                                                                        */
+ * _strcat - check the code
+ *
+ * Return: Always dest.
+ */
 char *_strcat(char *dest, char *src)
 {
         int i  = 0;
