@@ -2,8 +2,10 @@
 /**
  * _strcmp - check the code
  *
+ * @s1: The character to print
+ * @s2: The character to print
  *
- * Return: Always 0.
+ * Return: Always result.
  */
 int _strcmp(char *s1, char *s2)
 {
