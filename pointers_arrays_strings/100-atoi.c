@@ -20,16 +20,16 @@ int _atoi(char *s)
 	while (s[i])
 	{
 		if (s[i] == '-')
+		{
 			sign *= -1;
+		}
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
-
 			if (result > max_div_10 || (result == max_div_10 && digit > max_mod_10))
 			{
 				return (sign == 1 ? INT_MAX : INT_MIN);
 			}
-
 			result = result * 10 + digit;
 		}
 		else if (result > 0)
@@ -38,6 +38,5 @@ int _atoi(char *s)
 		}
 		i++;
 	}
-
 	return (result * sign);
 }
