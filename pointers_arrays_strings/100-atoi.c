@@ -2,12 +2,12 @@
 #include <limits.h>
 
 /**
-
-  _atoi - Entry point.
-  @s: character to be verified.
+ * _atoi - Entry point.
  *
-Return: convert integer.
-*/
+ * @s: character to be verified.
+ *
+ * Return: convert integer.
+ */
 int _atoi(char *s)
 {
 	int i = 0;
