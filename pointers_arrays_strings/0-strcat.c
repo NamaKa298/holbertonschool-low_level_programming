@@ -4,20 +4,19 @@
  *                                                                                                            * Return: Always char.                                                                                        */
 char *_strcat(char *dest, char *src)
 {
-        int i = 0;
+        int i  = 0;
         int j = 0;
-        char *res = dest;
 
-        while(dest[i] != '\0')
+        while(dest[i])
         {
-               res = res + dest[i];
-                i++;
+               i++;
         }
-        while (src[j])
+        while ( src[j])
         {
-                res = res + src[j];
+                dest[i] = src[j];
+
+		i++;
                 j++;
         }
-       res = res + '\0';
-        return (res);
+        return (dest);
 }
