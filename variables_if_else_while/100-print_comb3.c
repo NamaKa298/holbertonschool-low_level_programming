@@ -18,15 +18,13 @@ int main(void)
 			}
 			else
 			{
-				if (i == 0 && j ==1)
-				{
-					putchar('0' + i);
-					putchar('0' + j);
-				}
-				else
+				if (i != 0 && j != 1)
 				{
 					putchar(',');
 					putchar(' ');
+				}
+				else
+				{
 					putchar('0' + i);
 					putchar('0' + j);
 				}
