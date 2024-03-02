@@ -15,7 +15,11 @@ char *cap_string(char *str)
 	{
 		if (str[i] >= 97 && str[i] <= 122)
 		{
-			if ((str[i - 1] >= 65 && str[i - 1] <= 90) || (str[i - 1] >= 97 && str[i - 1] <= 122))
+			if (str[i - 1] >= 65 && str[i - 1] <= 90)
+			{
+				continue;
+			}
+			else if (str[i - 1] >= 97 && str[i - 1] <= 122)
 			{
 				continue;
 			}
