@@ -22,7 +22,7 @@ int main(void)
 					}
 					else
 					{
-						if ( k != 0 || l != 1)
+						if (k != 0 || l != 1)
 						{
 							putchar(',');
 							putchar(' ');
