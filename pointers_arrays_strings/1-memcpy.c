@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _memset - check the code
+ * _memcpy - check the code
  *
  * @dest: The character to print
  * @src: The character to print
