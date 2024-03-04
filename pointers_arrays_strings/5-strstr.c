@@ -23,15 +23,15 @@ char *_strstr(char *haystack, char *needle)
 			{
 				break;
 			}
-			else
-			{
-				continue;
-			}
 		}
 		if (needle[j] =='\0')
 		{
 			return (haystack + i);
-		}	
+		}
+		if (needle[i] == '\0')
+		{
+			return (haystack);
+		}
 	
 	}
 	return ('\0');
