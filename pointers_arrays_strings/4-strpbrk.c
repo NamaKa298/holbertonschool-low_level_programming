@@ -2,7 +2,7 @@
 /**
  * _strpbrk - check the code
  *
- * @cccept: The character to print
+ * @accept: The character to print
  * @s: The character to print
  *
  * Return: character.
