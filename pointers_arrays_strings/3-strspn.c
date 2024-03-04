@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * _strspn - check the code
  *
@@ -10,8 +9,9 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j, k;
+
 	unsigned int somme = 0;
-	unsigned int somme2 = 0;
+
 	k = 0;
 
 	for (i = 0 ; s[i] != '\0' ; i++)
@@ -30,11 +30,7 @@ unsigned int _strspn(char *s, char *accept)
 			continue;
 		}
 		if (k == 0 && somme > 0)
-			if (somme2 < somme)
-			{
-				somme2 = somme;
-			}
-		somme = 0;
+			break;
 	}
-	return (somme2);
+	return (somme);
 }
