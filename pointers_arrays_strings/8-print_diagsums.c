@@ -23,5 +23,5 @@ void print_diagsums(int *a, int size)
 	{
 		sommediag2 += a[size * i - i];
 	}
-	printf("%d, %d\n", sommediag1, sommediag2); 
+	printf("%d, %d\n", sommediag1, sommediag2);
 }
