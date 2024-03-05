@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * factorial - check the code
+ * _pow_recursion - check the code
  *
- * @n: The character to print
+ * @x: The character to print
+ * @y: The character to print
  *
- * Return: Always valeur factoriel.
+ * Return: Always puissance.
  */
 int _pow_recursion(int x, int y)
 {
