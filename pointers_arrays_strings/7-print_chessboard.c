@@ -2,7 +2,9 @@
 /**
  * print_chessboard - check the code
  *
- * Return: Always 0.
+ * @a: The character to print
+ *
+ * Return: Always nothing.
  */
 void print_chessboard(char (*a)[8])
 {
