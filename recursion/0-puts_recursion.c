@@ -2,6 +2,8 @@
 /**
  * _puts_recursion - check the code
  *
+ * @s: The character to print
+ *
  * Return: Always 0.
  */
 void _puts_recursion(char *s)
