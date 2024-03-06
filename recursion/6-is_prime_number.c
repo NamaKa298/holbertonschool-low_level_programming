@@ -1,7 +1,9 @@
+#include "main.h"
 /**
  * checker - check the code
  *
- * @n: The character to print
+ * @nombre_diviseur: The character to print
+ * @valeur_test: The character to print
  *
  * Return: Always int.
  */
@@ -28,8 +30,7 @@ int checker(int nombre_diviseur, int valeur_test)
 /**
  * is_prime_number - check the code
  *
- * @nombre_diviseur: The character to print
- * @valeur_test: The character to print
+ * @n: The character to print
  *
  * Return: Always int.
  */
