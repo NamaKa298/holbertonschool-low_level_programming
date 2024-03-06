@@ -1,15 +1,15 @@
 /**
  * checker - check the code
  *
- * @n: base number to check
+ * @n: The character to print
  *
  * Return: Always puissance.
  */
 /**
  * is_prime_number - check the code
  *
- * @nombre_diviseur: number is squared and compared against base
- * @valeur_test: base number to check
+ * @nombre_diviseur: The character to print
+ * @valeur_test: The character to print
  *
  * Return: Always puissance.
  */
