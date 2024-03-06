@@ -12,8 +12,7 @@
  * @valeur_test: base number to check
  *
  * Return: Always puissance.
- */  
-
+ */
 int checker(int nombre_diviseur, int valeur_test)
 {
 	if (valeur_test <= 1)
@@ -33,7 +32,6 @@ int checker(int nombre_diviseur, int valeur_test)
 		return (checker(nombre_diviseur - 1, valeur_test));
 	}
 }
-
 int is_prime_number(int n)
 {
 	return (checker(n - 1, n));
