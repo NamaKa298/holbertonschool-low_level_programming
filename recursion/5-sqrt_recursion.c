@@ -11,7 +11,7 @@ int checker(int racine_probable, int valeur_test)
 {
 	if (racine_probable * racine_probable == valeur_test)
 		return (racine_probable);
-	if (racine_probable * racine_probable > valeur_test)
+	else if (racine_probable * racine_probable > valeur_test)
 		return (-1);
 	return (checker(racine_probable + 1, valeur_test));
 }
