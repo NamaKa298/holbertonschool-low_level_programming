@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _sqrt_recursion - check the code
+ * checker - check the code
  *
  * @racine_probable: number is squared and compared against base
  * @valeur_test: base number to check
