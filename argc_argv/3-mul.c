@@ -12,9 +12,13 @@ int main(int argc, char *argv[])
         int count;
 	int resultat_multiplication = 1;
 
+	if (argc < 2 && argc > 2)
+	{
+		return (1);
+	}
         for (count = 1 ; count < argc ; count++)
         {
-        	resultat_multiplication *= atoi(argv[count]);
+		resultat_multiplication *= atoi(argv[count]);
 	}
 	printf("%d\n", resultat_multiplication);
         return (1);
