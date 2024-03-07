@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	int nbre_piece = 0;
 
 	number = atoi(argv[1]);
-	if (argc < 2 || number <= 0)
+	if (argc < 2 && number <= 0)
 	{
 		printf("Error\n");
 		return (1);
