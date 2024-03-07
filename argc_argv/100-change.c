@@ -17,12 +17,12 @@ int main(int argc, char *argv[])
 	int cents = 0;
 	int nbre_piece = 0;
 
-	if (argc < 2)
+	number = atoi(argv[1]);
+	if (argc < 2 || number <= 0)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	number = atoi(argv[1]);
 	for (count = 0 ; count < 5 ; count ++)
 	{
 		nbre_piece += (number / pieces[count]);
