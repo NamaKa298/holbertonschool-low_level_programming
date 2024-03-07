@@ -1,3 +1,4 @@
+#include<ctype.h>
 #include<stdio.h>
 #include<stdlib.h>
 /**
@@ -10,16 +11,19 @@
  */
 int main(int argc, char *argv[])
 {
-	int count;
+	int count, j;
 	int resultat_addition = 0;
 
 
 	for (count = 1 ; count < argc ; count++)
 	{
-		if (*argv[count] > '9' || *argv[count] < '0')
+		for ( j = 0 ; argv[count][j] != '\0' ; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if(! isdigit(argv[count][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		resultat_addition += atoi(argv[count]);
 	}
