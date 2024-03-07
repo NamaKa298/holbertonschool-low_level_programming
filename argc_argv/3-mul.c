@@ -12,8 +12,9 @@ int main(int argc, char *argv[])
         int count;
 	int resultat_multiplication = 1;
 
-	if (argc < 2 && argc > 2)
+	if (argc != 3)
 	{
+		printf("Error\n");
 		return (1);
 	}
         for (count = 1 ; count < argc ; count++)
