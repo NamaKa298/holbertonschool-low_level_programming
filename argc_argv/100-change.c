@@ -17,8 +17,10 @@ int main(int argc, char *argv[])
 	int nbre_piece = 0;
 
 	if (argc < 2)
+	{
 		printf("Error\n");
-	return (1);
+		return (1);
+	}
 	number = atoi(argv[1]);
 	if (number < 0)
 	{
@@ -32,8 +34,10 @@ int main(int argc, char *argv[])
 		number = number - (nbre_piece * pieces[count]);
 		nbre_piece = 0;
 		if (number == 0)
+		{
 			printf("%d\n", cents);
-		return (0);
+			return (0);
+		}
 	}
 	return (0);
 }
