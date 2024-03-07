@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
         for (count = 1 ; count < argc ; count++)
         {
-        	resultat_multiplication *= *argv[count] - '0';
+        	resultat_multiplication *= atoi(argv[count]);
 	}
 	printf("%d\n", resultat_multiplication);
         return (1);
