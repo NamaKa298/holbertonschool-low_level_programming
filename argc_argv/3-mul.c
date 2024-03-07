@@ -22,5 +22,5 @@ int main(int argc, char *argv[])
 		resultat_multiplication *= atoi(argv[count]);
 	}
 	printf("%d\n", resultat_multiplication);
-        return (1);
+        return (0);
 }
