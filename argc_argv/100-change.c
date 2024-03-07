@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int pieces[5] = {25, 10, 5, 2, 1};
 
 	int count, number;
-	char cents = 0;
+	int cents = 0;
 	int nbre_piece = 0;
 
 	if (argc < 2)
