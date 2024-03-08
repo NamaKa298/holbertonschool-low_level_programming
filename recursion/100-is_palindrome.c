@@ -33,8 +33,8 @@ int _strlen_recursion(char *s)
 	return (0);
 }
 /**
- * is_prime_number - check the code
- * @n: The character to print
+ * is_palindrome - check the code
+ * @s: The character to print
  * Return: Always int.
  */
 int is_palindrome(char *s)
