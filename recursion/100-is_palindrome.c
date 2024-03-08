@@ -10,17 +10,13 @@ int checker(char *lettre_debut, char *lettre_fin)
 {
 	if (lettre_debut >= lettre_fin)
 	{
-		return 1;
+		return (1);
 	}
 	if (*lettre_debut != *lettre_fin)
 	{
 		return (0);
 	}
-	else
-	{
-		return (checker(lettre_debut + 1, lettre_fin - 1));
-	}
-	return (1);
+	return (checker(lettre_debut + 1, lettre_fin - 1));
 }
 /**
  * _strlen_recursion - check the code
@@ -44,6 +40,7 @@ int _strlen_recursion(char *s)
 int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
+
 	return (checker(s, s + len - 1));
 }
 
