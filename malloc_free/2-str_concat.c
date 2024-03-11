@@ -49,9 +49,9 @@ char *str_concat(char *s1, char *s2)
 	j = 0;
 	 while (j < len2)
           {
-                  phrase_complete[i+j] = s2[j];
+                  phrase_complete[i + j] = s2[j];
                   j++;
 	  }
-	 phrase_complete[i+j] = '\0';
+	 phrase_complete[i + j] = '\0';
 	return (phrase_complete);
 }
