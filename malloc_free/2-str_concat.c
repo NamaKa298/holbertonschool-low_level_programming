@@ -24,8 +24,7 @@ int _strlen(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	char *phrase_complete;
-	int i = 0;
-	int j = 0;
+	int i, j;
 	int len1 = _strlen(s1);
 	int len2 = _strlen(s2);
 
@@ -34,15 +33,13 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	while (i < len1)
+	for (i = 0 ; i < len1 ; i++)
 	{
 		phrase_complete[i] = s1[i];
-		i++;
 	}
-	while (j < len2)
+	for (j = 0 ; j < len2 ; j++)
 	{
 		phrase_complete[i + j] = s2[j];
-		j++;
 	}
 	phrase_complete[i + j] = '\0';
 	return (phrase_complete);
