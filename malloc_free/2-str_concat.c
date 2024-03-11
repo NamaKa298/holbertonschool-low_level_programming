@@ -35,7 +35,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	phrase_complete = malloc(sizeof(char) * (len1 + len2 + 2));
+	phrase_complete = malloc(sizeof(char) * (len1 + len2 + 1));
 	if (phrase_complete == NULL)
 	{
 		return (NULL);
