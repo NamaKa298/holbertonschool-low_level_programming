@@ -1,10 +1,9 @@
 #include<stdlib.h>
 #include"main.h"
+#include<stdio.h>
 /**
  * _strlen - check the code
- *
  * @s: The character to print
- *
  * Return: Always 0.
  */
 int _strlen(char *s)
@@ -20,10 +19,8 @@ int _strlen(char *s)
 }
 /**
  * str_concat - check the code
- *
  * @s1: The character to print
  * @s2: The character to print
- *
  * Return: character.
  */
 char *str_concat(char *s1, char *s2)
@@ -38,7 +35,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	phrase_complete = malloc(sizeof(char) * (len1 + len2 + 1));
+	phrase_complete = malloc(sizeof(char) * (len1 + len2 + 2));
 	if (phrase_complete == NULL)
 	{
 		return (NULL);
