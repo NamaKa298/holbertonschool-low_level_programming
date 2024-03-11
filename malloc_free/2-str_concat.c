@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	int len1 = _strlen(s1);
 	int len2 = _strlen(s2);
 
-	phrase_complete = malloc(sizeof(char) * (len1 + len2 + 1));
+	phrase_complete= malloc(sizeof(char) * (len1 + len2 + 1));
 	if (phrase_complete == NULL)
 	{
 		return (NULL);
