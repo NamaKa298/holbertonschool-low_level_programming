@@ -26,7 +26,6 @@ int _strlen(char *s)
  *
  * Return: character.
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	char *phrase_complete;
@@ -47,11 +46,11 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	j = 0;
-	 while (j < len2)
-          {
-                  phrase_complete[i + j] = s2[j];
-                  j++;
-	  }
-	 phrase_complete[i + j] = '\0';
+	while (j < len2)
+	{
+		phrase_complete[i + j] = s2[j];
+		j++;
+	}
+	phrase_complete[i + j] = '\0';
 	return (phrase_complete);
 }
