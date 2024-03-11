@@ -1,5 +1,4 @@
 #include<stdlib.h>
-#include<stdio.h>
 #include"main.h"
 /**
  * _strdup - check the code
