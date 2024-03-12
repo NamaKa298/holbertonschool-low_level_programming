@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
  * malloc_checked - prints a grid of integers
  * @b: The character to print
@@ -8,7 +7,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *p = malloc(sizeof(b));
+	void *p = malloc(sizeof(b));
 	if (p == NULL)
 	{
 		exit(98);
