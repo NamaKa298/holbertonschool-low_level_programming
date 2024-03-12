@@ -1,21 +1,6 @@
 #include<stdlib.h>
 #include"main.h"
 /**
- * _strlen - check the code
- * @s: The character to print
- * Return: Always 0.
- */
-int _strlen(char *s)
-{
-	int longueur = 0;
-
-	while (s[longueur] != '\0')
-	{
-		longueur += 1;
-	}
-	return (longueur);
-}
-/**
  * str_concat - check the code
  * @s1: The character to print
  * @s2: The character to print
@@ -25,9 +10,17 @@ char *str_concat(char *s1, char *s2)
 {
 	char *phrase_complete;
 	int i, j;
-	int len1 = _strlen(s1);
-	int len2 = _strlen(s2);
+	int len1 = 0;
+	int len2 = 0;
 
+	while (s1[len1] != '\0')
+	{
+		 len1 += 1;
+	}
+	 while (s2[len2] != '\0')
+        {
+                 len2 += 1;
+        }
 	phrase_complete = malloc(sizeof(char) * (len1 + len2 + 1));
 	if (phrase_complete == NULL)
 	{
