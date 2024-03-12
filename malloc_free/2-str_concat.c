@@ -15,12 +15,12 @@ char *str_concat(char *s1, char *s2)
 
 	while (s1[len1] != '\0')
 	{
-		 len1 += 1;
+		len1 += 1;
 	}
 	while (s2[len2] != '\0')
-        {
-                 len2 += 1;
-        }
+	{
+		len2 += 1;
+	}
 	phrase_complete = malloc(sizeof(char) * (len1 + len2 + 1));
 	if (phrase_complete == NULL)
 	{
