@@ -11,11 +11,11 @@ int **alloc_grid(int width, int height)
 	int i, j;
 	
 	int **tableau = malloc(sizeof(int*) * height);
+
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-
 	for (i = 0 ; i < height ; i++)
 	{
 		tableau[i] = malloc(sizeof(int) * width);
