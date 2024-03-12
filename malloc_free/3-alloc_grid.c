@@ -4,12 +4,12 @@
  * alloc_grid - check the code
  * @width: The character to print
  * @height: The character to print
- * Return: Always 0.
+ * Return: Always tableau.
  */
 int **alloc_grid(int width, int height)
 {
 	int i, j;
-	
+
 	int **tableau = malloc(sizeof(int*) * height);
 
 	if (width <= 0 || height <= 0)
