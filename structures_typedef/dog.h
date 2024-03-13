@@ -1,4 +1,3 @@
-#include<stdio.h>
 /**
  * struct dog - check the code
  * @name: character to print
@@ -10,4 +9,4 @@ struct dog
 	char * name;
 	float age;
 	char * owner;
-};
+}
