@@ -50,6 +50,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		concat[i + j] = s2[j];
 	}
-	free(concat);
+	concat[i + j] ='\0';
 	return (concat);
 }
