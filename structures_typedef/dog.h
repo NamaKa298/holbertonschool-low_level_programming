@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * struct dog - Structure representing a dog
  * @name: The name of the dog
