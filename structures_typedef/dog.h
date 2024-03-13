@@ -5,7 +5,7 @@
  * @owner: The owner of the dog (string)
  *
  * Description: This structure represents a dog and contains
- *              information about its name, age, and owner.
+ * information about its name, age, and owner.
  */
 struct dog
 {
