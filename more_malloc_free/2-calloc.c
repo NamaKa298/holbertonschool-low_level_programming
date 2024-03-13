@@ -5,7 +5,6 @@
  * _calloc - check the code.
  * @nmemb: The character to print
  * @size: the size of the memory to print
- *
  * Return: Nothing.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -15,9 +14,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	p = malloc(nmemb * sizeof(size));
+	p = malloc(sizeof(nmemb * size));
 	if (p == NULL)
 		return (NULL);
-	free(p);
 	return (p);
 }
