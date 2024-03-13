@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include "main.h"
 #include <stdlib.h>
 /**
@@ -51,5 +50,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		concat[i + j] = s2[j];
 	}
+	free(concat);
 	return (concat);
 }
