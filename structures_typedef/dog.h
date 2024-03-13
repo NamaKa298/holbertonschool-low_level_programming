@@ -4,8 +4,7 @@
  * @age: The age of the dog (float)
  * @owner: The owner of the dog (pointer to char)
  *
- * Description: This structure represents a dog and contains
- * information about its name, age, and owner.
+ * Description: This structure represents a dog
  */
 struct dog
 {
