@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _calloc - check the code.
- * @nmemb: The character to print
- * @size: the size of the memory to print
+ * array_range - check the code.
+ * @min: The character to print
+ * @max: the size of the memory to print
  * Return: Nothing.
  */
 int *array_range(int min, int max)
@@ -16,7 +16,7 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	p = malloc(sizeof(int) * (max - min + 1));
+	p = malloc(sizeof(int) * (max - min + 2));
 	if (p == NULL)
 	{
 		return (NULL);
