@@ -24,23 +24,23 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(nouveau_chien);
 		return (NULL);
 	}
-	(*nouveau_chien).name = malloc(sizeof(name));
-	if ((*nouveau_chien).name == NULL)
+	nouveau_chien->name = malloc(sizeof(name));
+	if (nouveau_chien->name == NULL)
 	{
-		free((*nouveau_chien).name);
+		free(nouveau_chien->name);
 		free(nouveau_chien);
 		return (NULL);
 	}
-	(*nouveau_chien).owner = malloc(sizeof(owner));
-	if ((*nouveau_chien).owner == NULL)
+	nouveau_chien->owner = malloc(sizeof(owner));
+	if (nouveau_chien->owner == NULL)
 	{
-		free((*nouveau_chien).owner);
-		free((*nouveau_chien).name);
+		free(nouveau_chien->owner);
+		free(nouveau_chien->name);
 		free(nouveau_chien);
 		return (NULL);
 	}
-	(*nouveau_chien).name = name;
-	(*nouveau_chien).age = age;
-	(*nouveau_chien).owner = owner;
+	nouveau_chien->name = name;
+	nouveau_chien->age = age;
+	nouveau_chien->owner = owner;
 	return (nouveau_chien);
 }
