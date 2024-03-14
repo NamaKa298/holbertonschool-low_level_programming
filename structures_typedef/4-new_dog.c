@@ -24,7 +24,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(nouveau_chien);
 		return (NULL);
 	}
-	while (*name != '\0')
+	while (name[longueur_name] != '\0')
 		longueur_name += 1;
 	nouveau_chien->name = malloc((longueur_name + 1) * sizeof(char));
 	if (nouveau_chien->name == NULL)
@@ -33,7 +33,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(nouveau_chien);
 		return (NULL);
 	}
-	while (*owner != '\0')
+	while (owner[longueur_owner] != '\0')
 		longueur_owner += 1;
 	nouveau_chien->owner = malloc((longueur_owner + 1) * sizeof(char));
 	if (nouveau_chien->owner == NULL)
