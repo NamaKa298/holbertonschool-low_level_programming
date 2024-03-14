@@ -1,6 +1,7 @@
-#include <stdio.h>
-#include "dog.h"
-#include <stdlib.h>
+#include<stdio.h>
+#include"dog.h"
+#include<stdlib.h>
+#include<string.h>
 /**
  * new_dog - Create a new dog with specified details
  * @name: Pointer to a string representing the dog's name
@@ -33,6 +34,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	(*new_dog).age = age;
+	(*new_dog).owner = malloc(sizeof(owner));
 	(*new_dog).owner = owner;
 	if ((*new_dog).owner == NULL)
 	{
