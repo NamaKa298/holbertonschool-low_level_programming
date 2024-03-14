@@ -21,7 +21,6 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	struct dog *new_dog;
-	int indice_name, indice_owner;
 
 	new_dog = malloc(sizeof(struct dog));
 
@@ -44,14 +43,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free((*new_dog).name);
 		free(new_dog);
 		return (NULL);
-	}
-	for (indice_name = 0 ; indice_name < sizeof(name) + 1 ; indice_name++)
-	{
-		(*new_dog).name[indice_name] = name[indice_name];
-	}
-	for (indice_owner = 0 ; indice_owner < sizeof(owner) + 1; indice_owner++)
-	{
-		(*new_dog).owner[indice_owner] = name[indice_owner];
 	}
 	(*new_dog).name = name;
 	(*new_dog).age = age;
