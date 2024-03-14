@@ -11,36 +11,36 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *new_dog;
+	dog_t *nouveau_chien;
 
 	if (name == NULL || owner == NULL)
 	{
 		return (NULL);
 	}
-	new_dog = malloc(sizeof(struct dog));
+	nouveau_chien = malloc(sizeof(dog_t));
 
-	if (new_dog == NULL)
+	if (nouveau_chien == NULL)
 	{
-		free(new_dog);
+		free(nouveau_chien);
 		return (NULL);
 	}
-	(*new_dog).name = malloc(sizeof(name));
-	if ((*new_dog).name == NULL)
+	(*nouveau_chien).name = malloc(sizeof(name));
+	if ((*nouveau_chien).name == NULL)
 	{
-		free((*new_dog).name);
-		free(new_dog);
+		free((*nouveau_chien).name);
+		free(nouveau_chien);
 		return (NULL);
 	}
-	(*new_dog).owner = malloc(sizeof(owner));
-	if ((*new_dog).owner == NULL)
+	(*nouveau_chien).owner = malloc(sizeof(owner));
+	if ((*nouveau_chien).owner == NULL)
 	{
-		free((*new_dog).owner);
-		free((*new_dog).name);
-		free(new_dog);
+		free((*nouveau_chien).owner);
+		free((*nouveau_chien).name);
+		free(nouveau_chien);
 		return (NULL);
 	}
-	(*new_dog).name = name;
-	(*new_dog).age = age;
-	(*new_dog).owner = owner;
-	return (new_dog);
+	(*nouveau_chien).name = name;
+	(*nouveau_chien).age = age;
+	(*nouveau_chien).owner = owner;
+	return (nouveau_chien);
 }
