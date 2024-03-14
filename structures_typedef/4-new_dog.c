@@ -24,27 +24,27 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	while (name[longueur_name] != '\0')
 		longueur_name += 1;
-	nouveau_chien->name = malloc(longueur_name * sizeof(char) + 1);
-	if (nouveau_chien->name == NULL)
+	(*nouveau_chien).name = malloc(longueur_name * sizeof(char) + 1);
+	if ((*nouveau_chien).name == NULL)
 	{
-		free(nouveau_chien->name);
+		free((*nouveau_chien).name);
 		free(nouveau_chien);
 		return (NULL);
 	}
 	while (owner[longueur_owner] != '\0')
 		longueur_owner += 1;
-	nouveau_chien->owner = malloc(longueur_owner * sizeof(char) + 1);
-	if (nouveau_chien->owner == NULL)
+	(*nouveau_chien).owner = malloc(longueur_owner * sizeof(char) + 1);
+	if ((*nouveau_chien).owner == NULL)
 	{
-		free(nouveau_chien->owner);
-		free(nouveau_chien->name);
+		free((*nouveau_chien).owner);
+		free((*nouveau_chien).name);
 		free(nouveau_chien);
 		return (NULL);
 	}
 	for (i = 0 ; i <= longueur_name ; i++)
-		nouveau_chien->name[i] = name[i];
+		(*nouveau_chien).name[i] = name[i];
 	for (j = 0 ; j <= longueur_owner ; j++)
-		nouveau_chien->owner[j] = owner[j];
-	nouveau_chien->age = age;
+		(*nouveau_chien).owner[j] = owner[j];
+	(*nouveau_chien).age = age;
 	return (nouveau_chien);
 }
