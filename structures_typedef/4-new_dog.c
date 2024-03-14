@@ -3,11 +3,22 @@
 #include<stdlib.h>
 #include<string.h>
 /**
- * new_dog - create a new dog
- * @name: char string name
- * @age: int age
- * @owner: char string owner
- * Return: pointer to new dog
+ * new_dog - Creates a new dog structure
+ *
+ * @name: Pointer to the name of the dog
+ * @age: Age of the dog
+ * @owner: Pointer to the name of the owner
+ *
+ * Description:
+ *   This function creates a new dog structure with the given name,
+ *   age, and owner.
+ *   It allocates memory for the new structure and copies the name
+ *   and owner strings.
+ *   Returns a pointer to the newly created dog structure if successful,
+ *   or NULL if memory allocation fails.
+ *
+ * Return:
+ *   Pointer to the newly created dog structure or NULL on failure.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
