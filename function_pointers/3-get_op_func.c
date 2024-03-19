@@ -29,15 +29,15 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
+	if (s == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 	while (i < 6)
 	{
 		if (*s == *ops[i].op)
 		{
-			if (s == NULL)
-			{
-				printf("Error\n");
-				exit(99);
-			}
 			return (ops[i].f);
 
 		}
