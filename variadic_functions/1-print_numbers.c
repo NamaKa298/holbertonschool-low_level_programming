@@ -21,7 +21,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		if (i == 0 || separator == NULL)
 		{
-			printf("%d", va_arg(valeurs, int));
+			if (i == 0)
+			{
+				printf("%d", va_arg(valeurs, int));
+			}
+			else
+			{
+				printf(" %d", va_arg(valeurs, int));
+			}
 		}
 		else
 		{
