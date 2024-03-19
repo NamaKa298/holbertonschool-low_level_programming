@@ -33,7 +33,7 @@ int (*get_op_func(char *s))(int, int)
 	{
 		if (*s == *ops[i].op)
 		{
-			if (*s == NULL)
+			if (s == NULL)
 			{
 				printf("Error\n");
 				exit(99);
