@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 	char e = '\0';
 
 	va_start(objets, format);
-	while (format[index])
+	while (format[index] && format)
 	{
 		switch (format[index])
 		{
