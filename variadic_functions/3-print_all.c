@@ -48,7 +48,7 @@ void print_all(const char * const format, ...)
 				printf("%s", s);
 				break;
 		}
-		if (format[index + 1] != '\0')
+		if (format[index + 1] != '\0' && format[index + 1] != 'e')
 		{
 			printf(", ");
 		}
