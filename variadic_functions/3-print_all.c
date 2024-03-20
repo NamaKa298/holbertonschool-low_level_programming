@@ -23,6 +23,7 @@ void print_all(const char * const format, ...)
 	va_list objets;
 	int index = 0;
 	char *string;
+	char e = '\0';
 
 	va_start(objets, format);
 	while (format[index])
@@ -48,7 +49,7 @@ void print_all(const char * const format, ...)
 				printf("%s", string);
 				break;
 		}
-		if (format[index + 1] != '\0' && format[index + 1] != 'e')
+		if (format[index + 1] != '\0' && format[index + 1] != e)
 		{
 			printf(", ");
 		}
