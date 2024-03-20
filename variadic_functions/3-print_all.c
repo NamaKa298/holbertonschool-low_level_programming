@@ -50,8 +50,10 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		if (format[index + 1] != '\0' && format[index + 1] != e)
-		{
 			printf(", ");
+		while (format[index + 1] == 'e')
+		{
+		index++;
 		}
 		index++;
 	}
