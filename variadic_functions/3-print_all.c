@@ -52,7 +52,6 @@ void print_all(const char * const format, ...)
 			default:
 				format_de_mon_objet = 0;
 				break;
-
 		}
 		if (format[index + 1] && format_de_mon_objet)
 			printf(", ");
