@@ -23,11 +23,12 @@ void print_all(const char * const format, ...)
 	va_list objets;
 	int index = 0;
 	char *string;
-	char e = '\0';
+	int format_de_mon_objet;
 
 	va_start(objets, format);
-	while (format && format[index] && format[index] != '\0')
+	while (format && format[index])
 	{
+		format_de_mon_objet = 1;
 		switch (format[index])
 		{
 			case 'c':
@@ -48,13 +49,13 @@ void print_all(const char * const format, ...)
 				}
 				printf("%s", string);
 				break;
+			default:
+				format_de_mon_objet = 0;
+				break;
+
 		}
-		if (format[index + 1] && format[index + 1] != e)
+		if (format[index + 1] && format_de_mon_objet)
 			printf(", ");
-		while (format[index + 1] == 'e')
-		{
-		index++;
-		}
 		index++;
 	}
 	printf("\n");
