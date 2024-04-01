@@ -1,5 +1,4 @@
 #include "lists.h"
-#include<ctype.h>
 /**
  * add_node - Adds a new node at the beginning of a linked list
  * @head: A pointer to a pointer to the head of the linked list
