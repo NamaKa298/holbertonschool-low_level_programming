@@ -24,7 +24,6 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		return (NULL);
 	}
-
 	duplique = strdup(str);
 	if (duplique == NULL)
 	{
@@ -35,11 +34,9 @@ list_t *add_node(list_t **head, const char *str)
 	{
 		count++;
 	}
-
 	nouveau_noeud->str = duplique;
 	nouveau_noeud->len = count;
 	nouveau_noeud->next = *head;
 	*head = nouveau_noeud;
-
-	return nouveau_noeud;
+	return (nouveau_noeud);
 }
