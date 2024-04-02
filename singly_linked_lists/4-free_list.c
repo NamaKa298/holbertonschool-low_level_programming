@@ -21,5 +21,4 @@ void free_list(list_t *head)
 		free(head);
 		head = next_node;
 	}
-	free(head);
 }
