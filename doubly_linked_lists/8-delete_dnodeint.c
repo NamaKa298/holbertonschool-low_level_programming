@@ -19,33 +19,31 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	if (index == 0)
 	{
+		if (current->next != NULL)
+		{
+			current->next->prev = NULL;
+		}
 		if (*head == NULL)
 		{
 			return (-1);
 		}
 		*head = current->next;
-		current->prev = NULL;
-		free(current->prev);
+		free(current);
+		return (1);
 	}
 	while (current != NULL && idx < index - 1)
 	{
 		current = current->next;
 		idx += 1;
 	}
-	if (current == NULL)
+	if (current == NULL || current->next == NULL)
 	{
 		return (-1);
 	}
 	noeud_a_supprimer = current->next;
 	current->next = noeud_a_supprimer->next;
-	if (noeud_a_supprimer->next == NULL)
-		return (-1);
 	if (noeud_a_supprimer->next != NULL)
-	{
-		noeud_a_supprimer->next = current;
-		noeud_a_supprimer->prev = current;
-		current->prev = NULL;
-	}
+		noeud_a_supprimer->next->prev = current;
 	free(noeud_a_supprimer);
 	return (1);
 }
