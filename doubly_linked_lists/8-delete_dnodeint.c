@@ -43,7 +43,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	noeud_a_supprimer = current->next;
 	current->next = noeud_a_supprimer->next;
 	if (noeud_a_supprimer->next != NULL)
+	{
 		noeud_a_supprimer->next->prev = current;
+	}
 	free(noeud_a_supprimer);
 	return (1);
 }
