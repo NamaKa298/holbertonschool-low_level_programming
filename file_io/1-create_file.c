@@ -19,14 +19,17 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	while (text_content[caractere] != '\0')
+	if (text_content != NULL)
 	{
-		caractere += 1;
-	}
-	if (write(fd, text_content, caractere) != caractere)
-	{
-		close(fd);
-		return (-1);
+		while (text_content[caractere] != '\0')
+		{
+			caractere += 1;
+		}
+		if (write(fd, text_content, caractere) != caractere)
+		{
+			close(fd);
+			return (-1);
+		}
 	}
 	close(fd);
 	return (1);
